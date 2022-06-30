@@ -19,11 +19,11 @@ function splitSentence(array) {
 }
 
 // Desafio 4
-function concatName(lista) {
+function concatName(array) {
   let string = '';
-  string += lista.pop();
+  string += array.pop();
   string += ', ';
-  string += lista.shift();
+  string += array.shift();
   return string;
 }
 
