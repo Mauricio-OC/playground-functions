@@ -59,11 +59,11 @@ function fizzBuzz(array8) {
     if (array8[index] % 3 === 0 && array8[index] % 5 === 0) {
       resultado8.push('fizzBuzz');
     } else if (array8[index] % 3 === 0) {
-      array8.push('fizz');
+      resultado8.push('fizz');
     } else if (array8[index] % 5 === 0) {
-      array8.push('buzz');
+      resultado8.push('buzz');
     } else {
-      array8.push('bug!');
+      resultado8.push('bug!');
     }
   }
   return resultado8;
