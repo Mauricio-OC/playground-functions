@@ -53,18 +53,24 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(array) {
-  let texto = [];
-  for (let index = 0; index < array.length; index++) {
-    if (array[1] % 3 === 0 && array[1] % 5 === 0 ){ 
-      
+function fizzBuzz(array8) {
+  let resultado8 = [];
+  for (let index = 0; index < array8.length; index++) {
+    if (array8[index] % 3 === 0 && array8[index] % 5 === 0) {
+      resultado8.push('fizzBuzz');
+    } else if (array8[index] % 3 === 0) {
+      array8.push('fizz');
+    } else if (array8[index] % 5 === 0) {
+      array8.push('buzz');
+    } else {
+      array8.push('bug!');
     }
-
   }
+  return array8;
 }
 
 // Desafio 9
-function encode(string) {
+function encode() {
 
 }
 function decode() {
