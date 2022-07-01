@@ -1,3 +1,4 @@
+/* eslint-disable guard-for-in */
 // Desafio 1
 function compareTrue(parametro1, parametro2) {
   if (parametro1 === true && parametro2 === true) {
@@ -35,7 +36,7 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(array) {
-  
+
 }
 
 // Desafio 7
@@ -53,23 +54,35 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(array) {
-let texto = []
-for (let i = 0; i <array.length; i++){
-  
-}
+  let texto = [];
+  for (let i = 0; i <array.length; i++){
+
+  }
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+
 }
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, string) {
+  let nome = [];
+  array.sort();
+  if (array[0] === undefined) {
+    return 'Vazio!';
+  }
+  for (let index in array) {
+    let frase = {
+      tech: index,
+      name: string,
+    };
+    nome.push(frase);
+  }
+  return nome;
 }
 
 module.exports = {
