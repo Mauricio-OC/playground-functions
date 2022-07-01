@@ -55,7 +55,10 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   let texto = [];
-  for (let i = 0; i <array.length; i++){
+  for (let index = 0; index < array.length; index++) {
+    if (array[1] % 3 === 0 && array[1] % 5 === 0 ){ 
+      
+    }
 
   }
 }
@@ -70,19 +73,19 @@ function decode() {
 
 // Desafio 10
 function techList(array, string) {
-  let nome = [];
+  let texto10 = [];
   array.sort();
   if (array[0] === undefined) {
     return 'Vazio!';
   }
   for (let index in array) {
-    let frase = {
-      tech: index,
+    let frase10 = {
+      tech: array[index],
       name: string,
     };
-    nome.push(frase);
+    texto10.push(frase10);
   }
-  return nome;
+  return texto10;
 }
 
 module.exports = {
